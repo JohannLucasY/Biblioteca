@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca</h1>
+        <nav>
+            <a href="index.html">Adicionar livros!</a>
+            <a href="consultar.html">Consultar livro</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Adicionar livros!</h2>
+        <form id="form-livro">
+            <label for="nome">Nome do livro</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="autor">Nome do autor</label>
+            <input type="text" name="autor" id="autor">
+
+            <label for="data">Data do livro</label>
+            <input type="date" name="data" id="data">
+
+            <label>Nível de satisfação</label>
+            <div id="estrelas">
+                <button type="button" data-valor="1">★</button>
+                <button type="button" data-valor="2">★</button>
+                <button type="button" data-valor="3">★</button>
+                <button type="button" data-valor="4">★</button>
+                <button type="button" data-valor="5">★</button>
+            </div>
+            <input type="hidden" name="satisfacao" id="satisfacao" value="0">
+
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" rows="4"></textarea>
+            <button type="submit">Salvar livro</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Entender
+        <label for="autor">Nome do autor</label>
+        <input type="text" name="autor" id="autor">
+
+        rows
+  -->
