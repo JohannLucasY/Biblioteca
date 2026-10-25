@@ -6,7 +6,6 @@ estrelas.forEach((estrela) => {
         if (!campoSatisfacao)
             return;
         campoSatisfacao.value = estrela.dataset.valor ?? "0";
-        estrela.classList.add("ativa");
         const nota = Number(estrela.dataset.valor);
         estrelas.forEach((outra) => {
             const numero = Number(outra.dataset.valor);
@@ -16,7 +15,12 @@ estrelas.forEach((estrela) => {
             else {
                 outra.classList.remove("ativa");
             }
-            console.log(nota);
         });
+        console.log(nota);
     });
+});
+const formulario = document.querySelector("#form-livro");
+formulario?.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    console.log("Livro enviado");
 });
